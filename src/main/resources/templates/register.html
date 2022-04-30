@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Register User</title>
+    <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+<form action="/register" method="post">
+    <div class="container">
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+
+        <div class="row w-50">
+            <label for="username">
+                <b>Username</b>
+            </label><br>
+            <input type="text" class="form-control" placeholder="Enter Username" name="username" id="username" required>
+        </div>
+        <br>
+        <div class="row w-50">
+            <label for="password" class="form-control"><b>Password</b>
+            </label><br>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+        </div>
+        <br>
+        <div class="row w-50">
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+    </div>
+    <br>
+    <a href="/login">Login</a>
+
+</form>
+</body>
+</html>
